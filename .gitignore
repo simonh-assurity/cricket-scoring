@@ -10,3 +10,11 @@ hs_err_pid*
 # Gradle files
 build/
 .gradle/
+
+# VS Code
+.vscode
+
+.classpath
+.project
+.settings/
+bin/
