@@ -72,6 +72,7 @@ sourceSets {
 test {
     systemProperties['concordion.output.dir'] = "$reporting.baseDir/spec"
     include 'CricketSpec.*'   
+    testLogging.showStandardStreams = true
 }
 
 task wrapper(type: Wrapper) {
