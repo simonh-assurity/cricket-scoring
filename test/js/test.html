@@ -40,6 +40,15 @@
     backspace();
     assert.equal(getScore(), 0);
   });
+  
+  QUnit.test("removing a dotball calculates the score correctly", function( assert ) {
+    enter('.');
+    assert.equal(getScore(), 0);
+    assert.equal(getScorecard(), '.');
+    backspace();
+    assert.equal(getScore(), 0);
+  });
+ 
 
 
   function getScore() {
